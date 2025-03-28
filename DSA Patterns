@@ -1,7 +1,4 @@
 Whether you're a seasoned professional or an aspiring tech enthusiast, a good understanding of DSA (Data Structures and Algorithms) is crucial in acing coding interviews. These are the building blocks of effective problem-solving in the programming world. By mastering certain coding patterns, you can improve your efficiency and handle a wider array of problems during your DSA interviews. Here are 20 coding patterns to ensure your success.
-
-
-
 1. Two Pointer Technique: This technique is commonly applied on sorted arrays or linked lists to find pairs or reverse elements. It is an ideal strategy when managing elements with pair relationships.
 2. Sliding Window: This pattern is used to track a subset of data within a larger dataset. It's particularly useful in array or string problems when you need to maintain a 'window' of elements satisfying a certain condition.
 3. Fast & Slow Pointer: Used in linked list or array problems, this pattern is ideal for detecting cycles or finding a midpoint.
