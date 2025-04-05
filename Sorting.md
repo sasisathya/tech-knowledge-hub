@@ -1,4 +1,6 @@
 ```
+### BubbleSort
+## the bubble sort algorithm performs operations based on comparisons between adjacent elements
 function bubbleSort(arr) {
   for (let i = 0; i < arr.length - 1; i++) {
     let swapped = false;
@@ -15,5 +17,4 @@ function bubbleSort(arr) {
     }
   }
 }
-
 ```
