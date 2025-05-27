@@ -47,18 +47,16 @@ function selectionSort(arr) {
 # The Insertion Sort algorithm uses one part of the array to hold the sorted values, and the other part of the array to hold values that are not sorted yet.
 ```
 function insertionSort(arr) {
-  for (let i = 1; i < arr.length; i++) {
-    let current = arr[i];
-    let j = i - 1;
-
-    // Shift elements of arr[0..i-1], that are greater than current, to one position ahead
-    while (j >= 0 && arr[j] > current) {
-      arr[j + 1] = arr[j];
-      j--;
+  let n = arr.length; 
+  for(let i = 1;i < n; i++) {
+    let j = i;
+    while(j > 0 && arr[j] < arr[j-1]) {
+        int temp = arr[j];
+        arr[j] = arr[j-1];
+        arr[j-1] = temp;
+        j--;
     }
-    // Place the current element at its correct position
-    arr[j + 1] = current;
-  }
+}
   return arr;
 }
 ```
