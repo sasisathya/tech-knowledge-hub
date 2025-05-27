@@ -60,3 +60,45 @@ function insertionSort(arr) {
   return arr;
 }
 ```
+## QuickSort
+# QuickSort is a sorting algorithm based on the Divide and Conquer that picks an element as a pivot and partitions the given array around the picked pivot.
+```
+function quickSort(arr, start, end) {
+    if(start >= end) return;
+    let pt = partition(arr, start, end);
+    quickSort(arr, start, pt-1); // Fixed: should be pt-1 to avoid infinite recursion
+    quickSort(arr, pt+1, end);   // Fixed: typo in "quickSort"
+}
+
+function partition(arr, low, high) {
+    let pivot = arr[high];
+    let left = low; 
+    let right = high-1;
+    
+    while(left <= right) {       // Fixed: use <= to handle equal case
+        while(arr[left] < pivot) {
+            left++;
+        }
+        while(arr[right] > pivot) {
+            right--;             // Fixed: decrement right (not increment)
+        }
+        if(left >= right) {      // Fixed: use >= instead of >
+            break;
+        }
+        // Swap elements
+        let temp = arr[left];
+        arr[left] = arr[right];
+        arr[right] = temp;
+        
+        left++;                  // Added: advance pointers after swap
+        right--;                 // Added: advance pointers after swap
+    }
+    
+    // Swap pivot into final position
+    let temp = arr[left];
+    arr[left] = arr[high];
+    arr[high] = temp;
+    
+    return left;
+}
+```
