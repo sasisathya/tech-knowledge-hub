@@ -1,0 +1,31 @@
+ Data Structures & Algorithms (DSA)
+We'll go topic-wise with curated medium-to-hard problems (LeetCode-style), including variations to mimic follow-up rounds:
+
+Topic	Key Focus Areas	Sample Problems
+Arrays & Strings	Sliding window, two-pointer, prefix/suffix sum	Max subarray sum, Longest substring without repeat
+Hashing	Frequency maps, prefix hashing	Subarray sum equals K, Group anagrams
+Two Pointers	Sorting + logic, binary search variants	3Sum, Container with most water
+Stacks & Queues	Monotonic stack, LRU cache	Daily Temperatures, Valid Parentheses
+Trees & Graphs	DFS/BFS, Union-Find, Topological sort	Clone graph, Course schedule, Lowest Common Ancestor
+Heaps & Greedy	Min/Max heaps, interval problems	Merge K sorted lists, Meeting rooms II
+Recursion & Backtracking	Combinations, permutations	Word search, N-Queens
+Dynamic Programming	1D/2D DP, memoization	Longest Palindromic Substring, Edit Distance
+Binary Search	On answer, rotated array	Median of two sorted arrays
+Tries & Advanced DS	Trie, Segment tree, Fenwick Tree	Replace words, Range sum query
+
+2. System Design (High-Level + Deep-Dive)
+Category	Concepts	Example Questions
+High-Level Design	Load balancing, DB sharding, CDN, caching	Design Instagram, Design Twitter Feed
+Component Design	Rate limiting, Consistent hashing, Redis queues	Design API Gateway, URL Shortener
+Scalable Storage	SQL vs NoSQL, Indexing, Partitioning	Design Dropbox, Log ingestion system
+Real-time Systems	WebSockets, Pub/Sub, Kafka, polling	Design Chat App, Live score update
+Low-Level Design	Class diagrams, database schema, services	Design Parking Lot, Booking system
+
+3. Behavioral / Leadership Principles (Bar Raiser)
+We'll tailor answers using the STAR method with strong leadership flavor for senior roles.
+
+Type	Sample Prompts
+Ownership & Impact	Tell me about a time you made a high-stakes decision.
+People Leadership	How do you handle conflicts in a team you lead?
+Technical Excellence	Describe a design decision that significantly improved performance.
+Delivery & Execution	How do you plan and deliver complex projects under tight deadlines?
