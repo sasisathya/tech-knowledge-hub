@@ -10,6 +10,10 @@ Here is the documentation for the Data Structures and Algorithms in JavaScript, 
 4. [Queue](#queue)
 5. [Tree](#tree)
 6. [Graph](#graph)
+7. [Hash Table](#hash-table)
+8. [Heap](#heap)
+9. [Trie](#trie)
+10. 
 
 **Array**
 ================
