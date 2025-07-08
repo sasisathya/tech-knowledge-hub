@@ -417,4 +417,153 @@ Passing props through many levels. Use Context or state management tools to avoi
 
 ---
 
+# React.js Interview Questions & Answers
+
+A comprehensive guide covering **React**, **Hooks**, **Redux**, **Context API**, **React 19**, and **Advanced React** — ideal for cracking interviews at top tech companies. Each question includes definitions, examples, and interview-ready explanations.
+
+---
+
+## 🟢 Basic ReactJS Interview Questions
+
+... (previous content remains unchanged)
+
+---
+
+## 🔵 React 19 New Features Interview Questions
+
+### 1. What’s new in React 19?
+
+**Answer:** React 19 introduces several new features like the React Compiler, Actions, use() hook, improved SSR hydration/streaming, form actions, and better TypeScript support.
+
+---
+
+### 2. What is the React Compiler introduced in React 19?
+
+**Answer:** The React Compiler is an optimizing compiler that analyzes and automatically memoizes components and hooks at build time, improving rendering performance without manual `useMemo()` or `React.memo()` calls.
+
+---
+
+### 3. How does the React Compiler optimize re-renders?
+
+**Answer:** It automatically identifies components and values that don’t change and avoids recomputing them by tracking dependencies, eliminating unnecessary re-renders.
+
+---
+
+### 4. What are Actions in React 19? How are they different from event handlers?
+
+**Answer:** Actions are server or client functions triggered by form submissions. Unlike traditional event handlers, they can run on the server, simplify data mutation logic, and integrate naturally with `<form>` elements.
+
+```tsx
+<form action={someAction}>...</form>
+```
+
+---
+
+### 5. What is use() in React 19? When should you use it?
+
+**Answer:** `use()` is a new hook that allows components to wait for a Promise (like a server function or data fetch) to resolve. It integrates with Suspense for declarative async rendering.
+
+```js
+const user = use(fetchUser());
+```
+
+---
+
+### 6. Explain the new form actions and async form handling in React 19.
+
+**Answer:** React 19 supports async form submissions where the `action` attribute of a `<form>` can point to an async function (server/client). Form state and result are handled without manual useEffect/useState code.
+
+---
+
+### 7. What is the new built-in <form> behavior with Actions in React 19?
+
+**Answer:** Forms can now submit directly to server-defined actions without JavaScript glue code. React automatically handles serialization, validation, and redirection.
+
+---
+
+### 8. What are "Server Actions" in React 19 (Next.js)?
+
+**Answer:** Server Actions allow you to define async functions in server components that can be triggered from client UI elements like forms or buttons, enabling server mutations with minimal client JS.
+
+---
+
+### 9. What’s the role of useFormStatus() and useFormState() in React 19?
+
+* `useFormStatus()`: Gets the status of the current form submission (e.g., pending, error)
+* `useFormState()`: Holds the result or response from the last form submission
+
+---
+
+### 10. How does React 19 improve hydration and streaming for SSR?
+
+**Answer:** React 19 enhances Suspense, allowing better streaming and partial hydration. Server-rendered content loads faster and client JS is loaded in smaller chunks.
+
+---
+
+## 🟢 Advanced React 19 Questions
+
+### 1. How is React Compiler different from memoization or useMemo()?
+
+**Answer:** Unlike manual memoization, React Compiler analyzes and memoizes automatically at build time, reducing developer overhead and human error.
+
+---
+
+### 2. How do Actions replace traditional state mutation logic?
+
+**Answer:** Actions allow mutations to occur on the server or client and are automatically tied to user input events like form submission — removing the need for manually managing state update logic.
+
+---
+
+### 3. What are the benefits of React Compiler over manual optimization?
+
+* Eliminates need for `useMemo`, `useCallback`, `React.memo`
+* Reduces boilerplate
+* Ensures consistent optimization
+
+---
+
+### 4. Explain how the new use() hook integrates with Suspense and async rendering.
+
+**Answer:** `use()` suspends rendering until a Promise resolves. It works within Suspense boundaries to make async logic declarative and simpler to read.
+
+---
+
+### 5. What are the limitations or caveats of Actions and the use() hook?
+
+* Server Actions may require special handling for auth/security
+* `use()` only works in certain React runtimes (Next.js App Router)
+* Experimental as of React 19 (subject to change)
+
+---
+
+### 6. How does React 19 enable better DX (developer experience)?
+
+* Less boilerplate (no `useMemo`, `useCallback`)
+* Server-first logic reduces client JS size
+* Simplified forms and async handling
+
+---
+
+### 7. What are the differences between React Server Components (RSC) and Actions?
+
+| Feature       | React Server Components | Server Actions           |
+| ------------- | ----------------------- | ------------------------ |
+| Purpose       | Server-rendered views   | Server-side mutations    |
+| Triggered By  | Routing or page load    | Form submissions/buttons |
+| JS on Client? | No                      | Minimal                  |
+
+---
+
+### 8. How do you debug or log server actions in React 19 (Next.js)?
+
+Use server console logs, Next.js instrumentation (e.g., `app/api/logging.ts`), and consider edge middleware to inspect requests/responses.
+
+---
+
+### 9. How does React 19 support better compatibility with TypeScript?
+
+React 19 improves TypeScript inference for form actions and compiler analysis, reducing need for explicit typings.
+
+---
+
 > This document is your go-to reference for mastering React.js interviews. Practice with real projects, keep your concepts sharp, and be ready to explain with examples.
