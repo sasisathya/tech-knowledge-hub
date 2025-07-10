@@ -449,4 +449,418 @@ navigator.geolocation.getCurrentPosition(pos => {
 console.log(window === globalThis); // true in browser
 ```
 
-Would you like me to continue from concept 42 onwards?
+## 42. Hoisting
+
+Variables and function declarations are moved to the top of their scope before code execution.
+
+```js
+console.log(a); // undefined
+var a = 5;
+```
+
+## 43. IIFE (Immediately Invoked Function Expression)
+
+Function that runs immediately after it's defined.
+
+```js
+(function() {
+  console.log('Executed');
+})();
+```
+
+## 44. Inheritance (Class-based, Prototype-based)
+
+```js
+class Animal {
+  speak() { console.log('Animal speaks'); }
+}
+class Dog extends Animal {}
+const d = new Dog();
+d.speak();
+```
+
+## 45. Intersection Observer API
+
+Used for observing element visibility.
+
+```js
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => console.log(entry.isIntersecting));
+});
+observer.observe(document.querySelector('#target'));
+```
+
+## 46. JavaScript Memory Management (Garbage Collection)
+
+Automatically allocates and frees memory. Use references wisely to avoid leaks.
+
+## 47. JavaScript vs ECMAScript
+
+* **JavaScript**: Implementation (browser/runtime)
+* **ECMAScript**: Specification (language standard)
+
+## 48. JSON (JavaScript Object Notation)
+
+Data format used for data exchange.
+
+```js
+const json = JSON.stringify({ name: 'JS' });
+const obj = JSON.parse(json);
+```
+
+## 49. Lazy Loading
+
+Loading content only when needed.
+
+```js
+<img src="img.jpg" loading="lazy" />
+```
+
+## 50. Map and Set
+
+```js
+const map = new Map([[1, 'a']]);
+const set = new Set([1, 2, 3]);
+```
+
+## 51. Memoization
+
+Caching results to improve performance.
+
+```js
+const memo = {};
+function fib(n) {
+  if (memo[n]) return memo[n];
+  if (n < 2) return n;
+  return (memo[n] = fib(n - 1) + fib(n - 2));
+}
+```
+
+## 52. Methods
+
+Functions defined on objects.
+
+```js
+const obj = {
+  greet() { return 'Hello'; }
+};
+```
+
+## 53. Module Pattern
+
+Encapsulation using closures.
+
+```js
+const Counter = (() => {
+  let count = 0;
+  return {
+    increment: () => ++count,
+    get: () => count
+  };
+})();
+```
+
+## 54. Modules (Import/Export)
+
+```js
+// file.js
+export const x = 10;
+// app.js
+import { x } from './file.js';
+```
+
+## 55. MutationObserver
+
+Observes DOM changes.
+
+```js
+const observer = new MutationObserver(mutations => {
+  console.log(mutations);
+});
+observer.observe(document.body, { childList: true });
+```
+
+## 56. NaN (Not a Number)
+
+Result of invalid number operation.
+
+```js
+console.log(NaN === NaN); // false
+Number.isNaN(NaN); // true
+```
+
+## 57. Object
+
+Collection of key-value pairs.
+
+```js
+const obj = { name: 'JS' };
+```
+
+## 58. Object Literal Shorthand
+
+```js
+const name = 'JS';
+const obj = { name }; // same as { name: name }
+```
+
+## 59. Object.assign()
+
+Copies values from source to target object.
+
+```js
+const target = {};
+Object.assign(target, { a: 1 });
+```
+
+## 60. Performance Optimization
+
+* Use lazy loading, debouncing, reduce DOM access
+* Use web workers, pagination, caching
+
+## 61. Polyfills
+
+Code that adds support for features not supported in older browsers.
+
+```js
+if (!Array.prototype.includes) {
+  Array.prototype.includes = function(el) {
+    return this.indexOf(el) !== -1;
+  };
+}
+```
+
+## 62. Promise.all()
+
+Resolves when all promises resolve.
+
+```js
+Promise.all([Promise.resolve(1), Promise.resolve(2)]).then(console.log);
+```
+
+## 63. Promises
+
+Handle async code.
+
+```js
+new Promise((resolve, reject) => {
+  resolve('Done');
+}).then(console.log);
+```
+
+## 64. Prototypal Inheritance
+
+Objects inherit from other objects.
+
+```js
+const a = { greet() { return 'Hello'; } };
+const b = Object.create(a);
+console.log(b.greet());
+```
+
+## 65. RegEx (Regular Expressions)
+
+Used for pattern matching.
+
+```js
+const regex = /hello/i;
+regex.test('Hello World');
+```
+
+## 66. Scope (Function vs Block Scope)
+
+* `var`: function scoped
+* `let`, `const`: block scoped
+
+## 67. Service Workers
+
+Scripts that run in background for caching/offline.
+
+```js
+navigator.serviceWorker.register('/sw.js');
+```
+
+## 68. Set and Map Iteration
+
+```js
+for (const val of new Set([1, 2, 3])) console.log(val);
+for (const [k, v] of new Map([[1, 'a']])) console.log(k, v);
+```
+
+## 69. Set vs Map
+
+* **Set**: unique values
+* **Map**: key-value pairs
+
+## 70. SetTimeout and SetInterval
+
+```js
+setTimeout(() => console.log('later'), 1000);
+const intervalId = setInterval(() => console.log('repeat'), 1000);
+```
+
+## 71. Shadow DOM
+
+Encapsulation for custom elements.
+
+```js
+const shadow = element.attachShadow({ mode: 'open' });
+shadow.innerHTML = '<p>Shadow!</p>';
+```
+
+## 72. Template Literals
+
+```js
+const name = 'JS';
+console.log(`Hello, ${name}`);
+```
+
+## 73. Shadowing
+
+Inner variable with same name as outer.
+
+```js
+let a = 1;
+function foo() {
+  let a = 2;
+  console.log(a); // 2
+}
+```
+
+## 74. Spread & Rest Operators
+
+```js
+// Spread
+const arr = [1, 2];
+const copy = [...arr];
+
+// Rest
+function sum(...nums) {
+  return nums.reduce((a, b) => a + b);
+}
+```
+
+## 75. Strict Mode
+
+Enables stricter parsing and error handling.
+
+```js
+'use strict';
+```
+
+## 76. SVG Manipulation
+
+```js
+const svg = document.querySelector('svg');
+svg.setAttribute('width', '100');
+```
+
+## 77. Symbol
+
+Unique identifier.
+
+```js
+const sym = Symbol('desc');
+```
+
+## 78. String Concatenation
+
+```js
+const full = 'Hello' + ' ' + 'World';
+```
+
+## 79. This Keyword
+
+Refers to context object.
+
+```js
+const obj = {
+  name: 'JS',
+  greet() { return this.name; }
+};
+```
+
+## 80. Test-Driven Development
+
+Write tests before implementation.
+
+```js
+// Pseudo-code
+it('adds correctly', () => expect(add(2, 3)).toBe(5));
+```
+
+## 81. Boolean Values
+
+```js
+const isTrue = true;
+const isFalse = false;
+```
+
+## 82. let, var & const
+
+* `let`: block-scoped, mutable
+* `var`: function-scoped
+* `const`: block-scoped, immutable reference
+
+## 83. Type Coercion vs Type Conversion
+
+* Coercion: implicit
+* Conversion: explicit
+
+```js
+console.log('5' + 1); // '51'
+console.log(Number('5') + 1); // 6
+```
+
+## 84. URL API (URLSearchParams, URL objects)
+
+```js
+const url = new URL('https://example.com?page=1');
+const params = new URLSearchParams(url.search);
+console.log(params.get('page'));
+```
+
+## 85. WeakMap & WeakSet
+
+Only hold weak references, no iteration.
+
+```js
+const wm = new WeakMap();
+const ws = new WeakSet();
+```
+
+## 86. Web Animations
+
+```js
+document.querySelector('div').animate([
+  { transform: 'translateX(0)' },
+  { transform: 'translateX(100px)' }
+], {
+  duration: 1000
+});
+```
+
+## 87. localStorage & sessionStorage
+
+```js
+localStorage.setItem('key', 'value');
+sessionStorage.setItem('key', 'value');
+```
+
+## 88. Web Workers & WebSockets
+
+* **Web Workers**: Run JS in background thread.
+
+```js
+const worker = new Worker('worker.js');
+```
+
+* **WebSockets**: Bi-directional communication.
+
+```js
+const socket = new WebSocket('ws://example.com');
+socket.onmessage = (e) => console.log(e.data);
+```
+
+---
+
