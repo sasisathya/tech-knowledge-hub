@@ -1,5 +1,7 @@
 # 🔍 Microservices Design Patterns – In-Depth Guide with Diagrams
 
+![Microservices Design Patterns](./MS_DP.png)
+
 This document provides a comprehensive, in-depth look at the **most essential microservices design patterns**. Each pattern is explained with **practical use cases** and a **conceptual flow diagram** to help visualize the pattern in action.
 
 ---
