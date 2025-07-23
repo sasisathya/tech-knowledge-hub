@@ -117,6 +117,7 @@ function binarySearch(arr, target) {
 }
 ```
 5. Sort an array using bubble sort:
+       Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order.
 ```javascript
 function bubbleSort(arr) {
   for (let i = 0; i < arr.length - 1; i++) {
@@ -132,6 +133,7 @@ function bubbleSort(arr) {
 }
 ```
 6. Sort an array using selection sort:
+      Selection Sort is a comparison-based sorting algorithm. It sorts an array by repeatedly selecting the smallest (or largest) element from the unsorted portion.
 ```javascript
 function selectionSort(arr) {
   for (let i = 0; i < arr.length - 1; i++) {
@@ -149,6 +151,7 @@ function selectionSort(arr) {
 }
 ```
 7. Sort an array using insertion sort:
+       Insertion sort is a simple sorting algorithm that works by iteratively inserting each element of an unsorted list into its correct position in a sorted portion
 ```javascript
 function insertionSort(arr) {
   for (let i = 1; i < arr.length; i++) {
