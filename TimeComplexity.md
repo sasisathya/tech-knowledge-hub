@@ -208,21 +208,105 @@ This is a **one-pager style reference** you can keep handy while learning/practi
 
 ---
 
-# 🔹 Quick Rules
-
-* **Drop constants** → O(2n) → O(n)
-* **Drop non-dominant terms** → O(n² + n) → O(n²)
-* **Nested loops multiply** → O(n²)
-* **Sequential adds** → O(n + n²) → O(n²)
-* **Recursive calls**: use **recurrence relation** (e.g., T(n) = 2T(n/2) + O(n) → O(n log n))
-
----
 
 ✅ With this cheat sheet, you can **quickly recall complexity bounds** for almost all standard DSA problems.
 
 ---
+Perfect 🚀 — let’s turn this into a **visual DSA Roadmap Chart** that connects **topics → complexities**.
 
-👉 Do you want me to make this into a **visual roadmap chart (like a study flow diagram)** that connects each topic with its complexity, so you can glance and know where each fits?
+Since I can’t draw directly here, I’ll give you a **structured roadmap flow diagram (text-visual)**. You can literally print or convert this into a **mindmap / flowchart** in tools like Excalidraw, Miro, Notion, or even on paper.
 
+---
 
-👉 Do you want me to also create a **cheat sheet of complexities** for the most common algorithms & data structures (searching, sorting, stacks, queues, heaps, trees, graphs, DP) that you can keep handy while studying?
+# 📌 DSA Complexity Roadmap (Theory → Problems)
+
+```
+START
+  |
+  ├── Complexity Basics
+  |     ├── Big O → Worst Case
+  |     ├── Ω → Best Case
+  |     └── Θ → Tight/Average Case
+  |
+  ├── Arrays & Strings (O(n), O(n²))
+  |     ├── Traversals → O(n)
+  |     ├── Sliding Window → O(n)
+  |     ├── Two Pointers → O(n)
+  |     └── Substring/Anagram → O(n)
+  |
+  ├── Searching & Sorting
+  |     ├── Linear Search → O(n)
+  |     ├── Binary Search → O(log n)
+  |     ├── Bubble/Selection/Insertion → O(n²)
+  |     ├── MergeSort/QuickSort → O(n log n)
+  |     └── HeapSort → O(n log n)
+  |
+  ├── Recursion & Backtracking
+  |     ├── Subset/Permutations → O(2ⁿ) / O(n!)
+  |     ├── Divide & Conquer (QuickSelect) → O(n) avg
+  |     └── N-Queens/Sudoku → O(2ⁿ)
+  |
+  ├── Linked List (O(n))
+  |     ├── Access/Search → O(n)
+  |     ├── Insert/Delete (head/tail) → O(1)
+  |     └── Reverse/Cycle Detection → O(n)
+  |
+  ├── Stacks & Queues
+  |     ├── Push/Pop/Enqueue/Dequeue → O(1)
+  |     └── Monotonic Stack/Queue → O(n)
+  |
+  ├── Hashing
+  |     ├── Insert/Search/Delete → O(1) avg, O(n) worst
+  |     └── Frequency Counting → O(n)
+  |
+  ├── Trees & BSTs
+  |     ├── Traversals → O(n)
+  |     ├── BST Search/Insert/Delete → O(log n) avg, O(n) worst
+  |     └── Balanced BST (AVL/Red-Black) → O(log n)
+  |
+  ├── Heaps & Priority Queue
+  |     ├── Insert/Delete → O(log n)
+  |     ├── Heapify → O(n)
+  |     └── Kth largest/smallest → O(n log k)
+  |
+  ├── Graphs
+  |     ├── BFS/DFS → O(V+E)
+  |     ├── Dijkstra → O((V+E) log V)
+  |     ├── Bellman-Ford → O(VE)
+  |     ├── Floyd-Warshall → O(V³)
+  |     └── MST (Kruskal/Prim) → O(E log V)
+  |
+  ├── Dynamic Programming
+  |     ├── Fibonacci DP → O(n)
+  |     ├── Knapsack (0/1) → O(nW)
+  |     ├── LCS/Edit Distance → O(nm)
+  |     ├── Matrix Chain Multiplication → O(n³)
+  |     └── Subset Sum → O(n * sum)
+  |
+  └── Advanced
+        ├── Tries → O(L) (L = length of word)
+        ├── Segment Trees/Fenwick → O(log n) per query
+        ├── DSU (Union-Find) → O(α(n)) ≈ O(1)
+        └── Bit Manipulation → O(1) per op
+```
+
+---
+
+# 🔹 How to Use This
+
+* **Weekdays (theory):** Pick a section (e.g., Arrays & Strings), study complexity + algorithms.
+* **Weekends (practice):** Solve problems of that category, focusing on those complexities.
+* As you move down the chart, problems get progressively **harder**.
+
+---
+
+✅ With this roadmap:
+
+* You’ll **cover all DSA topics in order of importance**
+* You’ll **know the exact complexity class** each problem belongs to
+* You’ll avoid confusion about best/worst/average cases
+
+---
+
+👉 Do you want me to **turn this into a visual mindmap image** (like a clean chart with arrows and complexity tags) so you can keep it as a quick reference poster?
+
