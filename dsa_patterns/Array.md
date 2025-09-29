@@ -1,5 +1,3 @@
-Great — you’ve captured the essence of the **Arrays & Hashing (Sets/Maps) pattern** nicely. Let me expand this into a structured **cheat sheet** you can rely on while solving problems:
-
 ---
 
 ## 🔑 Arrays & Hashing (Sets/Maps) Pattern
