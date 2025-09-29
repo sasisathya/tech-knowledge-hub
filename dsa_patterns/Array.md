@@ -1,0 +1,56 @@
+🔑 Arrays & Hashing (Sets/Maps) Pattern
+✅ When to Use
+
+Membership check → "Have we seen this before?"
+
+Frequency counts → "How many times does this occur?"
+
+Deduplication → "Remove duplicates while preserving logic."
+
+Fast lookups → O(1) on average with hash tables.
+
+🚩 Common Triggers in Problem Statements
+
+Mentions of “frequency,” “count,” “duplicate,” “anagram,” “pair,” “unique,” “first occurrence.”
+
+Questions like:
+
+“Does this element already exist?”
+
+“How many times does each element appear?”
+
+“Can we group by a property/key?”
+
+⚡ Core Starter Problems
+
+Two Sum → Hash map for complement lookup.
+
+Valid Anagram → Frequency count comparison.
+
+Group Anagrams → Hashing sorted strings/char counts.
+
+Contains Duplicate → Set membership.
+
+Top K Frequent Elements → Hash map + heap/bucket sort.
+
+⚠️ Pitfalls & Mistakes
+
+Assuming O(1) lookup always holds (collisions can degrade performance in worst case).
+
+Using the wrong key structure (e.g., mutable objects as keys, forgetting to normalize case/ordering).
+
+Not handling negative numbers, Unicode chars, or large ranges in counting arrays vs hash maps.
+
+Forgetting to reset or clear hash maps in iterative solutions.
+
+🧠 Pro Tips
+
+Set = presence/absence check.
+
+Map/Dict = frequency counts, index mapping, group classification.
+
+Counter (Python) / defaultdict saves boilerplate.
+
+For anagrams, sort or use char frequency tuple as the key.
+
+For subarrays, hash prefix sums to track seen differences.
