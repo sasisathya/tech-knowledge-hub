@@ -34,5 +34,8 @@ Here’s the high-level picture:
 java -version
 javac -version
 ```
+### Just-In-Time (JIT) Compilation
+
+* JIT is a runtime optimization technique where code is compiled into machine code only when it’s needed (just in time) — not beforehand.
 
 If both work, you’re set.
