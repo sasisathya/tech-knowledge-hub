@@ -1,3 +1,45 @@
+# 📚 Data Structures & Algorithms Documentation
+
+<p align="center">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Algorithms-4CAF50?style=for-the-badge&logo=algorithm&logoColor=white" alt="Algorithms" />
+  <img src="https://img.shields.io/badge/Data_Structures-FF6B6B?style=for-the-badge&logo=databricks&logoColor=white" alt="Data Structures" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/stars/sasisathya/dsa_doc?style=social" alt="Stars" />
+  <img src="https://img.shields.io/github/forks/sasisathya/dsa_doc?style=social" alt="Forks" />
+</p>
+
+## 🎯 Overview
+
+Comprehensive documentation and implementation guide for **Data Structures, Algorithms, MongoDB Design Patterns,** and **Microservices Architecture** - all in JavaScript. This repository serves as a learning resource for developers preparing for technical interviews, studying computer science fundamentals, or building scalable applications.
+
+## ✨ What's Inside
+
+- 📖 **Data Structures** - Complete guide with code examples
+- 🧮 **Algorithms** - Problem-solving techniques and implementations
+- 🍃 **MongoDB Design Patterns** - Best practices for NoSQL databases
+- 🏗️ **Microservices Patterns** - Architecture and design principles
+- 💡 **Real-world Examples** - Practical applications of concepts
+- 🎓 **Interview Prep** - Common questions with detailed solutions
+
+## 🚀 Quick Links
+
+- [Array](https://github.com/sasisathya/dsa_doc?tab=readme-ov-file#array)
+- [Linked List](#linked-list)
+- [Stack](#stack)
+- [Queue](#queue)
+- [Tree](#tree)
+- [Graph](#graph)
+- [Hash Table](#hash-table)
+- [Heap](#heap)
+- [Trie](#trie)
+- [MongoDB Design Patterns](https://github.com/sasisathya/dsa_doc/tree/main/mongodb#readme)
+- [Microservices Design Patterns](https://github.com/sasisathya/dsa_doc/tree/main/Design%20Patterns)
+
+---
+
 
 
 Here is the documentation for the Data Structures and Algorithms in JavaScript, with answers and code examples:
