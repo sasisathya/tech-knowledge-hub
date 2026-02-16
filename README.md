@@ -32,6 +32,7 @@ This repository is a **comprehensive knowledge base** covering everything you ne
 - 🟨 **JavaScript & Node.js** - Modern JavaScript and backend development
 - ⚛️ **React** - Build powerful frontend applications
 - 🗄️ **Databases** - MongoDB, SQL, and database design patterns
+- 🤖 **AI & Machine Learning** - ML, Deep Learning, MLOps for Full Stack Developers
 - 💼 **Interview Prep** - Questions, study plans, and preparation guides
 
 ---
@@ -48,6 +49,7 @@ This repository is a **comprehensive knowledge base** covering everything you ne
 | 🟨 **JavaScript & Node.js** | Fundamentals, Backend Development | [📁 Go to JS/Node](./04-JavaScript-NodeJS/) |
 | ⚛️ **React** | Fundamentals, Best Practices, Interview Q&A | [📁 Go to React](./05-React/) |
 | 🗄️ **Databases** | MongoDB, SQL, Design Patterns | [📁 Go to Databases](./06-Databases/) |
+| 🤖 **AI & Machine Learning** | ML, Deep Learning, MLOps | [📁 Go to AI/ML](./07-AI-ML-Learning/) |
 
 ### **Resources**
 
@@ -110,6 +112,19 @@ This repository is a **comprehensive knowledge base** covering everything you ne
 ```
 **Perfect for:** Data modeling, backend development
 
+### 07. AI & Machine Learning
+```
+07-AI-ML-Learning/
+├── 01-Python-Fundamentals/    # NumPy, Pandas, Matplotlib
+├── 02-Math-for-ML/             # Linear Algebra, Calculus, Statistics
+├── 03-Machine-Learning/        # Supervised/Unsupervised Learning
+├── 04-Deep-Learning/           # Neural Networks, CNNs, RNNs
+├── 05-MLOps/                   # Model Deployment, Monitoring
+├── 06-Specialized-Tracks/      # LLM-NLP, Computer Vision, MLOps
+└── Resources/                  # Roadmap, Free Resources, Projects
+```
+**Perfect for:** Transitioning to AI/ML, MLOps engineering
+
 ---
 
 ## 🚀 Learning Paths
@@ -140,6 +155,16 @@ This repository is a **comprehensive knowledge base** covering everything you ne
 3. Database Design (06-Databases/)
 4. Microservices (02-System-Design/Architecture/)
 ```
+
+### **Path 4: Full Stack Developer → MLOps Engineer (6 months)**
+```
+1. Python & Math Foundations (07-AI-ML-Learning/01-Python-Fundamentals/, 02-Math-for-ML/)
+2. Machine Learning Basics (07-AI-ML-Learning/03-Machine-Learning/)
+3. Deep Learning (07-AI-ML-Learning/04-Deep-Learning/)
+4. MLOps Specialization (07-AI-ML-Learning/05-MLOps/)
+5. Build Production ML Projects (07-AI-ML-Learning/06-Specialized-Tracks/MLOps-Focus/)
+```
+**Perfect for:** Full Stack Developers with DevOps experience transitioning to AI
 
 ---
 
@@ -182,8 +207,9 @@ This repository is a **comprehensive knowledge base** covering everything you ne
 - 🎓 **Students** - Learning programming and computer science
 - 💼 **Job Seekers** - Preparing for technical interviews
 - 👨‍💻 **Developers** - Improving skills and learning new technologies
-- 🚀 **Career Changers** - Transitioning to software development
+- 🚀 **Career Changers** - Transitioning to software development or AI/ML
 - 📈 **Senior Engineers** - Refreshing system design knowledge
+- 🤖 **Full Stack Devs → AI/ML** - Leveraging DevOps skills for MLOps career
 
 ---
 
@@ -201,10 +227,11 @@ Found a bug? Have a suggestion? Want to add content?
 
 ## 📊 Repository Stats
 
-- **Topics Covered:** 6 major areas (DSA, System Design, Java, JavaScript, React, Databases)
+- **Topics Covered:** 7 major areas (DSA, System Design, Java, JavaScript, React, Databases, AI/ML)
 - **Interview Questions:** 100+ React questions + many more across topics
 - **Code Examples:** Hundreds of practical examples
-- **Study Plans:** Multiple paths for different goals
+- **Study Plans:** Multiple paths for different goals (including AI/ML transition)
+- **AI/ML Resources:** 6-month roadmap, 20+ project ideas, comprehensive learning guides
 
 ---
 
